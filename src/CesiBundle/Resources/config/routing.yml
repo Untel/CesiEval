@@ -1,0 +1,22 @@
+# Actions
+
+cesi_update_training_action:
+    path:     /training/update/{id}
+    defaults: { _controller: CesiBundle:TrainingAction:update }
+
+cesi_delete_training_action:
+    path:     /training/delete/{id}
+    defaults: { _controller: CesiBundle:TrainingAction:delete }
+
+# Rendering
+cesi_home_training_render:
+    path:     /home/{page}
+    defaults: { _controller: CesiBundle:TrainingRender:index }
+
+cesi_new_training_render:
+    path:     /training/new
+    defaults: { _controller: CesiBundle:TrainingRender:addTraining }
+
+cesi_edit_training_render:
+    path:     /training/edit/{id}
+    defaults: { _controller: CesiBundle:TrainingRender:editTraining }
